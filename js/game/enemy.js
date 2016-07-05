@@ -11,7 +11,7 @@ Enemy.instance_DRONE = function(obj, x, y, angle) {
 		o.angle = 90 * Util.DEG_TO_RAD; //facing down screen at player
 		o.bounds.setAABB(0, 0, 32, 24);
 		o.collisionFlags = GameObject.CF_PLAYER_SHOTS;
-		o.nextActionDelay = 10;
+		o.nextActionDelay = 1000;
 		o.CULLING = GameObject.CULL_AUTO;
 
 		o.updateFunc = function() {
